@@ -1,0 +1,33 @@
+.modal
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 600px
+    max-height: 200px
+    display: none
+    align-items: center
+    padding: 50px
+    border: 2px solid #000
+    border-radius: 20px
+    z-index: 5
+    background-color: #333
+    svg
+        position: absolute
+        right: 20px
+        top: 20px
+
+
+.overlay
+    display: none
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2
+    background-color: #333
+    opacity: 0.3
+
+.active
+    display: flex

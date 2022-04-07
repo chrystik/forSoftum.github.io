@@ -1,0 +1,49 @@
+main
+    display: flex
+    justify-content: center
+    margin-top: 50px
+
+
+.card-container
+    width: 85%
+    min-height: 500px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .card
+        padding: 10px
+        width: 200px
+        max-width: 500px
+        min-height: 250px
+        max-height: 500px
+        border-radius: 20px
+        border: 1px solid #202942
+        background-color: #0e1726
+        color: #fff
+        margin-right: 20px
+        margin-bottom: 20px
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex-grow: 1
+        .card-buttons
+            display: flex
+            justify-content: space-between
+            .modal-bla-bla
+                color: #888ea8
+            .delete-card
+                color: red
+
+.skeleton 
+    background: linear-gradient(90deg,hsl(210, 15%, 88%),hsl(210, 15%, 95%),hsl(210, 15%, 88%))
+    background-size: 200%
+    animation: loader 1s infinite reverse
+
+@keyframes loader 
+    from 
+        background-position: -100% 0
+    
+    to 
+        background-position: 100% 0
+  
